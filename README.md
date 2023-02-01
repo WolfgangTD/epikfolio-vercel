@@ -2,7 +2,7 @@
 
 to run locally do this :)
 
-gh repo clone WolfgangTD/epikfolio
+gh repo clone WolfgangTD/epikfolio-vercel-test
 
 npm install
 
