@@ -33,14 +33,14 @@ export default function ElgatoClicker() {
         if (clicks >= 100)
         {
             setClicks(clicks - 100);
-            setUpgrade1(upgrade1 + 1)
+            setUpgrade1(upgrade2 + 1)
         }
     }
     function Upgrade3(){
         if (clicks >= 1000)
         {
             setClicks(clicks - 1000);
-            setUpgrade1(upgrade1 + 1)
+            setUpgrade1(upgrade3 + 1)
         }
     }
 
