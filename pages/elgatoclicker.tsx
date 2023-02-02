@@ -1,16 +1,16 @@
 import Image from 'next/image'
 import React from 'react'
 
-
-
-
-
 export default function ElgatoClicker() {
-    
+
     const [clicks, setClicks] = React.useState(0);
     
     function handleClick(){
         setClicks(clicks + 1)
+    }
+
+    function reset(){
+        setClicks(0)
     }
 
     return (
@@ -31,9 +31,9 @@ export default function ElgatoClicker() {
                 alt="el gato"
             />
             
-            <p>Counter: <span id="counter"> ({clicks}) </span></p>
+            <p>Counter: <span id="counter"> {clicks} </span></p>
 
-            <button id="reset"> reset </button>
+            <button id="reset" onClick={reset}> reset </button>
         </div>
         </>
     )
