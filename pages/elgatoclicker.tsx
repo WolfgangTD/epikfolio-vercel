@@ -1,13 +1,19 @@
 import Image from 'next/image'
 import React from 'react'
 
-const [clicks, setClicks] = React.useState(0);
 
-function handleClick(){
-    setClicks(clicks + 1)
-}
 
-const ElgatoClicker = () => (
+
+
+export default function ElgatoClicker() {
+    
+    const [clicks, setClicks] = React.useState(0);
+    
+    function handleClick(){
+        setClicks(clicks + 1)
+    }
+
+    return (
         <>
         <div>
             <h1>
@@ -31,5 +37,5 @@ const ElgatoClicker = () => (
         </div>
         </>
     )
+}
 
-export default ElgatoClicker
