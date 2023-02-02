@@ -8,6 +8,7 @@ let NewCounter = parseInt(counter);
 function handleClick() {
     clicks++;
     NewCounter = clicks;
+    console.log("+1")
 }
 
 function reset() { 
