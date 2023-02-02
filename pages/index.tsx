@@ -1,6 +1,6 @@
 import Link from 'next/link'
-
 const Index = () => (
+  <>
     <div>
       <h1>
         Hello World
@@ -13,6 +13,7 @@ const Index = () => (
             <p>CLICK HERE FOR ELGATO CLICKER :O</p>
         </Link>
     </div>
+  </>
   )
   
   export default Index

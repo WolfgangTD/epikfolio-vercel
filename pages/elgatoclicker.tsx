@@ -69,19 +69,25 @@ export default function ElgatoClicker() {
                 id="elgato"
             />
             
-            <p>Dabloons: <span id="counter"> {clicks} </span></p>
+            <p>Dabloons: {clicks} </p>
 
-            <p>Upgrade 1: <span id="upgrade1"> {upgrade1} </span></p>
-            <p>Upgrade 2: <span id="upgrade2"> {upgrade2} </span></p>
-            <p>Upgrade 3: <span id="upgrade3"> {upgrade3} </span></p>
-
-            <button id="upgradeButt1" onClick={Upgrade1}> Upgrade 1 costs 10 Dabloons </button>
-            <button id="upgradeButt2" onClick={Upgrade2}> Upgrade 2 costs 100 Dabloons </button>
-            <button id="upgradeButt3" onClick={Upgrade3}> Upgrade 3 costs 1000 Dabloons </button>
-
-            <button id="beatGame" onClick={WinGame}> Beat the game - costs 1 million Dabloons </button>
-
-            <button id="reset" onClick={reset}> reset </button>
+            <p>Upgrade 1: {upgrade1} </p>
+            <p>Upgrade 2: {upgrade2} </p>
+            <p>Upgrade 3: {upgrade3} </p>
+            <br></br>
+            <button className="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3" onClick={Upgrade1}> Upgrade 1 costs 10 Dabloons </button>
+            <br></br>
+            <br></br>
+            <button className="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3" onClick={Upgrade2}> Upgrade 2 costs 100 Dabloons </button>
+            <br></br>
+            <br></br>
+            <button className="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3" onClick={Upgrade3}> Upgrade 3 costs 1000 Dabloons </button>
+            <br></br>
+            <br></br>
+            <button className="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3" onClick={WinGame}> Beat the game - costs 1 million Dabloons </button>
+            <br></br>
+            <br></br>
+            <button className="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3" onClick={reset}> reset </button>
         </div>
         </>
     )
