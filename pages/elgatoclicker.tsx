@@ -7,7 +7,7 @@ var counter = (document.getElementById('counter') as HTMLInputElement).value;
 
 function handleClick() {
     clicks = clicks + 1;
-    
+    console.log(counter)
 }
 
 function reset() { 
