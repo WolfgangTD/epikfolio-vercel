@@ -4,14 +4,14 @@ let clicks: any = 0;
 let counter = document.getElementById('counter') as HTMLInputElement;
 
 function handleClick() {
-    if (process.browser) {
+    if (typeof window !== "undefined") {
         clicks = clicks + 1;
         counter.value = clicks;
     }
 }
 
 function reset(){
-    if (process.browser){
+    if (typeof window !== "undefined"){
         clicks = 0;
         counter.value = clicks;
     }
