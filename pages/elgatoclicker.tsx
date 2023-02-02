@@ -37,6 +37,7 @@ export default function ElgatoClicker() {
             
             <p>Counter: <span id="counter"> 0 </span></p>
 
+            <button id="reset" onClick={reset}> reset </button>
         </div>
         </>
     )
