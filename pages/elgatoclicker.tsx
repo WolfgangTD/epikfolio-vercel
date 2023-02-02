@@ -3,7 +3,7 @@ import Image from 'next/image'
 var clicks = 0;
 
 function handleClick(){
-    clicks = clicks + 1;
+    clicks++;
     console.log(clicks);
 }
 
@@ -25,7 +25,7 @@ const ElgatoClicker = () => (
                 alt="el gato"
             />
             
-            <p>Counter: <span id="counter"> 0 </span></p>
+            <p>Counter: <span id="counter"> ${clicks} </span></p>
 
             <button id="reset"> reset </button>
         </div>
