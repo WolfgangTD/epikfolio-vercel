@@ -1,17 +1,21 @@
 import Image from 'next/image'
 
+
 let clicks: any = 0;
-let counter = document.getElementById('counter')!.click();
 
 
 function handleClick() {
-        clicks = clicks + 1;
-        counter = clicks;
+    let counter = document.getElementById('counter')
+    if(counter) (counter as HTMLFormElement).reset(); 
+    clicks = clicks + 1;
+    counter = clicks;
 }
 
 function reset() {
-        clicks = 0;
-        counter = clicks;
+    let counter = document.getElementById('counter')
+    if(counter) (counter as HTMLFormElement).reset(); 
+    clicks = 0;
+    counter = clicks;
 }
 
 const ElgatoClicker = () => (
