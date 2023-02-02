@@ -3,17 +3,11 @@ import Image from 'next/image'
 let clicks: any = 0;
 
 function handleClick() {
-    let counter = document.getElementById('counter')
-    if(counter) (counter as HTMLFormElement).reset(); 
     clicks++;
-    counter = clicks;
 }
 
-function reset() {
-    let counter = document.getElementById('counter')
-    if(counter) (counter as HTMLFormElement).reset(); 
+function reset() { 
     clicks = 0;
-    counter = clicks;
 }
 
 const ElgatoClicker = () => (
@@ -34,7 +28,7 @@ const ElgatoClicker = () => (
                 alt="el gato"
             />
             
-            <p>Counter: <span id="counter"> 0 </span></p>
+            <p>Counter: <span id="counter"> {clicks} </span></p>
 
             <button id="reset" onClick={reset}> reset </button>
         </div>
