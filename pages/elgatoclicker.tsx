@@ -41,4 +41,18 @@ var ElgatoClicker = () => (
         </div>
         </>
     )
+export async function getStaticProps() {
+    // Call an external API endpoint to get posts.
+    // You can use any data fetching library
+    const res = await fetch('/elgato.png')
+    const elgato = await res.json()
+  
+    // By returning { props: { posts } }, the Blog component
+    // will receive `posts` as a prop at build time
+    return {
+      props: {
+        elgato,
+      },
+    }
+  }
 export default ElgatoClicker
