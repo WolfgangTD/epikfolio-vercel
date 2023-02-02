@@ -1,7 +1,11 @@
 import Image from 'next/image'
+import Head from 'next/head'
 
 const ElgatoWin = () =>(
         <>
+        <Head>
+            <title>Elgato WIN!</title>
+        </Head>
             <div>
                 <h1>
                     CONGRAGULATIONS ON BEATING ELGATO CLICKER

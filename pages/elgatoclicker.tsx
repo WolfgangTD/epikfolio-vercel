@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { useRouter } from 'next/router'
+import Head from 'next/head';
 
 export default function ElgatoClicker() {
 
@@ -52,6 +53,9 @@ export default function ElgatoClicker() {
 
     return (
         <>
+        <Head>
+            <title>Elgato Clicker</title>
+        </Head>
         <div>
             <h1>
                 Elgato Clicker will be ported here

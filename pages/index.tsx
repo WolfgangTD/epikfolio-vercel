@@ -4,6 +4,7 @@ const Index = () => (
   <>
     <div>
       <Head>
+        <link rel="shortcut icon" href="../cool-favicon64x64.ico" />
         <title>Wolf's Portfolio</title>
       </Head>
       <h1>
