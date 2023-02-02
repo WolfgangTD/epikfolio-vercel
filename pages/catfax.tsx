@@ -1,5 +1,5 @@
-export default function Catfax() {
-    return (
+const Catfax = () => (
+    
         <>
             <div>
                 <h1>
@@ -8,4 +8,4 @@ export default function Catfax() {
             </div>
         </>
     )
-}
+export default Catfax

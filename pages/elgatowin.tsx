@@ -1,5 +1,4 @@
-export default function ElgatoWin() {
-    return (
+const ElgatoWin = () =>(
         <>
             <div>
                 <h1>
@@ -8,5 +7,5 @@ export default function ElgatoWin() {
             </div>
         </>
     )
-}
+export default ElgatoWin
 
