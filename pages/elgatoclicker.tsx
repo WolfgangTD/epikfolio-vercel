@@ -41,18 +41,18 @@ var ElgatoClicker = () => (
         </div>
         </>
     )
+
+
+// pages/blog.js
+import { loadElgato } from '../lib/load-elgato'
+
+// This function runs only on the server side
 export async function getStaticProps() {
-    // Call an external API endpoint to get posts.
-    // You can use any data fetching library
-    const res = await fetch('/elgato.png')
-    const elgato = await res.json()
-  
-    // By returning { props: { posts } }, the Blog component
-    // will receive `posts` as a prop at build time
-    return {
-      props: {
-        elgato,
-      },
-    }
-  }
+  // Instead of fetching your `/api` route you can call the same
+  // function directly in `getStaticProps`
+  const posts = await loadElgato()
+
+  // Props returned will be passed to the page component
+  return { props: { posts } }
+}
 export default ElgatoClicker
