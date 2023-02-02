@@ -3,19 +3,21 @@ import Image from 'next/image'
 let clicks: any = 0;
 let counter = document.getElementById('counter') as HTMLInputElement;
 
-export default function ElgatoClicker() {
-    
-    function handleClick() {
+function handleClick() {
+    if (process.browser) {
         clicks = clicks + 1;
         counter.value = clicks;
-        
     }
+}
 
-    function reset(){
+function reset(){
+    if (process.browser){
         clicks = 0;
         counter.value = clicks;
     }
-    return(
+}
+
+var ElgatoClicker = () => (
         <>
         <div>
             <h1>
@@ -39,4 +41,4 @@ export default function ElgatoClicker() {
         </div>
         </>
     )
-}
+export default ElgatoClicker
