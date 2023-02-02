@@ -13,7 +13,7 @@ const Index = () => (
             <p>CLICK HERE FOR ELGATO CLICKER :O</p>
         </Link>
 
-        <Link href='/movies'>
+        <Link href='/api/movies'>
             <p>testing mongodb</p>
         </Link>
     </div>
