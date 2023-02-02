@@ -9,7 +9,7 @@ const ElgatoWin = () =>(
                 <Image
                     src="/break-dance-cat.gif"
                     width='1000'
-                    height='1000'
+                    height='800'
                     alt="el gato break dancing"
                 />
             </div>
