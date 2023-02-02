@@ -1,11 +1,12 @@
 import Image from 'next/image'
 
 var clicks = 0;
-
+if (document) document.getElementById('counter');
 var counter = (document.getElementById('counter') as HTMLInputElement).value;
 
 
 function handleClick() {
+    
     clicks = clicks + 1;
     console.log(counter)
 }
