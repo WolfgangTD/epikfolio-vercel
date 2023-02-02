@@ -1,9 +1,17 @@
+import Image from 'next/image'
+
 const ElgatoWin = () =>(
         <>
             <div>
                 <h1>
-                    Elgato Clicker WIN SCREEN will be ported here
+                    CONGRAGULATIONS ON BEATING ELGATO CLICKER
                 </h1>
+                <Image
+                    src="/break-dance-cat.gif"
+                    width='1000'
+                    height='1000'
+                    alt="el gato break dancing"
+                />
             </div>
         </>
     )
