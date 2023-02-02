@@ -1,11 +1,11 @@
 import Image from 'next/image'
 
-function handleClick() {
-    console.log("increment number")
-}
+var clicks = 0;
 
-//function reset() {
-//}
+function handleClick(){
+    clicks = clicks + 1;
+    console.log(clicks);
+}
 
 const ElgatoClicker = () => (
         <>
