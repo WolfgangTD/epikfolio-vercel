@@ -1,9 +1,13 @@
 import Image from 'next/image'
 
-let clicks: any = 0;
+var clicks = 0;
+
+var counter = (document.getElementById('counter') as HTMLInputElement).value;
+let NewCounter = parseInt(counter);
 
 function handleClick() {
     clicks++;
+    NewCounter = clicks;
 }
 
 function reset() { 
@@ -28,7 +32,7 @@ const ElgatoClicker = () => (
                 alt="el gato"
             />
             
-            <p>Counter: <span id="counter"> {clicks} </span></p>
+            <p>Counter: <span id="counter"> 0 </span></p>
 
             <button id="reset" onClick={reset}> reset </button>
         </div>
