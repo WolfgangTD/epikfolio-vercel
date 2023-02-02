@@ -1,26 +1,11 @@
 import Image from 'next/image'
 
-
-
-
-let clicks: any = 0;
-
-
 function handleClick() {
-    let counter = document.getElementById('counter')
-    if(counter) (counter as HTMLFormElement).reset(); 
-    clicks = clicks + 1;
-    counter = clicks;
-
     console.log("increment number")
 }
 
-function reset() {
-    let counter = document.getElementById('counter')
-    if(counter) (counter as HTMLFormElement).reset(); 
-    clicks = 0;
-    counter = clicks;
-}
+//function reset() {
+//}
 
 const ElgatoClicker = () => (
         <>
@@ -42,7 +27,7 @@ const ElgatoClicker = () => (
             
             <p>Counter: <span id="counter"> 0 </span></p>
 
-            <button id="reset" onClick={reset}> reset </button>
+            <button id="reset"> reset </button>
         </div>
         </>
     )
