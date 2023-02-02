@@ -1,10 +1,10 @@
 import Image from 'next/image'
+import React from 'react'
 
-var clicks = 0;
+const [clicks, setClicks] = React.useState(0);
 
 function handleClick(){
-    clicks++;
-    console.log(clicks);
+    setClicks(clicks + 1)
 }
 
 const ElgatoClicker = () => (
@@ -25,7 +25,7 @@ const ElgatoClicker = () => (
                 alt="el gato"
             />
             
-            <p>Counter: <span id="counter"> ${clicks} </span></p>
+            <p>Counter: <span id="counter"> ({clicks}) </span></p>
 
             <button id="reset"> reset </button>
         </div>
