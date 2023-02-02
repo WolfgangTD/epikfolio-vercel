@@ -1,6 +1,8 @@
 import Image from 'next/image'
 
 
+
+
 let clicks: any = 0;
 
 
@@ -9,6 +11,8 @@ function handleClick() {
     if(counter) (counter as HTMLFormElement).reset(); 
     clicks = clicks + 1;
     counter = clicks;
+
+    console.log("increment number")
 }
 
 function reset() {
