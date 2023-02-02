@@ -1,13 +1,11 @@
 import Image from 'next/image'
 
-
 let clicks: any = 0;
-
 
 function handleClick() {
     let counter = document.getElementById('counter')
     if(counter) (counter as HTMLFormElement).reset(); 
-    clicks = clicks + 1;
+    clicks++;
     counter = clicks;
 }
 
