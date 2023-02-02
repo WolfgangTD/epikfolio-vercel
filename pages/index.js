@@ -12,6 +12,10 @@ const Index = () => (
         <Link href='/elgatoclicker'>
             <p>CLICK HERE FOR ELGATO CLICKER :O</p>
         </Link>
+
+        <Link href='/movies'>
+            <p>testing mongodb</p>
+        </Link>
     </div>
   )
   
