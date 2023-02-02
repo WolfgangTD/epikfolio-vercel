@@ -1,20 +1,17 @@
 import Image from 'next/image'
 
+if (document) document.getElementById('counter');
 let clicks: any = 0;
 let counter = document.getElementById('counter') as HTMLInputElement;
 
 function handleClick() {
-    if (typeof window !== "undefined") {
         clicks = clicks + 1;
         counter.value = clicks;
-    }
 }
 
-function reset(){
-    if (typeof window !== "undefined"){
+function reset() {
         clicks = 0;
         counter.value = clicks;
-    }
 }
 
 const ElgatoClicker = () => (
@@ -42,17 +39,4 @@ const ElgatoClicker = () => (
         </>
     )
 
-
-// pages/blog.js
-import { loadElgato } from '../lib/load-elgato'
-
-// This function runs only on the server side
-export async function getStaticProps() {
-  // Instead of fetching your `/api` route you can call the same
-  // function directly in `getStaticProps`
-  const elgato = await loadElgato()
-
-  // Props returned will be passed to the page component
-  return { props: { elgato } }
-}
 export default ElgatoClicker
