@@ -17,7 +17,7 @@ function reset(){
     }
 }
 
-var ElgatoClicker = () => (
+const ElgatoClicker = () => (
         <>
         <div>
             <h1>
@@ -50,9 +50,9 @@ import { loadElgato } from '../lib/load-elgato'
 export async function getStaticProps() {
   // Instead of fetching your `/api` route you can call the same
   // function directly in `getStaticProps`
-  const posts = await loadElgato()
+  const elgato = await loadElgato()
 
   // Props returned will be passed to the page component
-  return { props: { posts } }
+  return { props: { elgato } }
 }
 export default ElgatoClicker
