@@ -1,7 +1,11 @@
 import Link from 'next/link'
+import Head from 'next/head'
 const Index = () => (
   <>
     <div>
+      <Head>
+        <title>Wolf's Portfolio</title>
+      </Head>
       <h1>
         Hello World
       </h1>
