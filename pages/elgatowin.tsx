@@ -7,7 +7,7 @@ const ElgatoWin = () =>(
             <title>Elgato WIN!</title>
         </Head>
             <div>
-                <h1>
+                <h1 className="text-white">
                     CONGRAGULATIONS ON BEATING ELGATO CLICKER
                 </h1>
                 <Image

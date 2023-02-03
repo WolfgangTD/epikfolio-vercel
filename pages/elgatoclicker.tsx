@@ -56,28 +56,31 @@ export default function ElgatoClicker() {
         <Head>
             <title>Elgato Clicker</title>
         </Head>
-        <div>
-            <h1>
+        <div className="bg-green-900 text-center">
+            <h1 className="text-white">
                 Elgato Clicker will be ported here
             </h1>
-            <h3>
+            <h3 className="text-white">
                 Created by Me
             </h3>
-            <p>this is a website to make epik el gato game</p>
-            <Image
+            <p className="text-white">this is a website to make epik el gato game</p>
+            
+            <Image 
+                
+                width='250'
+                height='250'
                 src="/elgato.png"
-                width='400'
-                height='400'
                 onClick={handleClick}
                 alt="el gato"
                 id="elgato"
+                
             />
-            
-            <p>Dabloons: {clicks} </p>
 
-            <p>Upgrade 1: {upgrade1} </p>
-            <p>Upgrade 2: {upgrade2} </p>
-            <p>Upgrade 3: {upgrade3} </p>
+            <p className="text-white">Dabloons: {clicks} </p>
+
+            <p className="text-white">Upgrade 1: {upgrade1} </p>
+            <p className="text-white">Upgrade 2: {upgrade2} </p>
+            <p className="text-white">Upgrade 3: {upgrade3} </p>
             <br></br>
             <button className="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3" onClick={Upgrade1}> Upgrade 1 costs 10 Dabloons </button>
             <br></br>
