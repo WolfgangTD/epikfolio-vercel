@@ -13,6 +13,8 @@ const Index = () => (
       </h1>
       <br></br>
       <br></br>
+      <p className='text-center text-9xl text-green-300' >hush child</p>
+        
         <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
  href='/catfax'>
             <p>CLICK HERE FOR CAT FACTS!!!!</p>

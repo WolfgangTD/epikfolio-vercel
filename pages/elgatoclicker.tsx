@@ -56,7 +56,7 @@ export default function ElgatoClicker() {
         <Head>
             <title>Elgato Clicker</title>
         </Head>
-        <div className="bg-green-900 text-center">
+        <div className='text-center bg-orange-500 min-h-screen'>
             <h1 className="text-white">
                 Elgato Clicker will be ported here
             </h1>
@@ -64,17 +64,23 @@ export default function ElgatoClicker() {
                 Created by Me
             </h3>
             <p className="text-white">this is a website to make epik el gato game</p>
-            
+            <br></br>
+            <div
+                style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    }}
+            >
             <Image 
-                
                 width='250'
                 height='250'
                 src="/elgato.png"
                 onClick={handleClick}
                 alt="el gato"
-                id="elgato"
-                
+                id="elgato"  
+                className='snap-center'
             />
+            </div>
 
             <p className="text-white">Dabloons: {clicks} </p>
 
