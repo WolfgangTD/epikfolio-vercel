@@ -16,14 +16,15 @@ const Index = () => (
       <p className='text-center text-9xl text-green-300' >hush child</p>
       <br></br>
       <br></br>
-        <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+        <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600 px-5"
  href='/catfax'>
-            <p>CLICK HERE FOR CAT FACTS!!!!</p>
+            CLICK HERE FOR CAT FACTS!!!!
         </Link>
       <br></br>
-        <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+      <br></br>
+        <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600 px-5"
  href='/elgatoclicker'>
-            <p>CLICK HERE FOR ELGATO CLICKER :O</p>
+            CLICK HERE FOR ELGATO CLICKER :O
         </Link>
     </div>
   </>
