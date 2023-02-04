@@ -14,6 +14,7 @@ export default function ElgatoClicker() {
     
     function handleClick(){
         setClicks(clicks + 1 + upgrade1 + (upgrade2*10) + (upgrade3*100));
+
     }
 
     function reset(){
@@ -65,12 +66,7 @@ export default function ElgatoClicker() {
             </h3>
             <p className="text-white">this is a website to make epik el gato game</p>
             <br></br>
-            <div
-                style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    }}
-            >
+            <div className='justify-center flex'>
             <Image 
                 width='250'
                 height='250'
@@ -78,7 +74,6 @@ export default function ElgatoClicker() {
                 onClick={handleClick}
                 alt="el gato"
                 id="elgato"  
-                className='snap-center'
             />
             </div>
 
