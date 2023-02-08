@@ -1,16 +1,15 @@
 import Head from "next/head"
 
-const Catfax = () => (
-    
-        <>
-        <Head>
-            <title>Cat Fax</title>
-        </Head>
-            <div>
-                <h1 className="text-white">
-                    This page will contain cat facts :)))
-                </h1>
-            </div>
-        </>
-    )
-export default Catfax
+
+
+export default function CatFax() {
+	return (
+    <>
+		<div className='text-center'>
+			<main>
+				<button className="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800">Make API call</button>
+			</main>
+		</div>
+    </>
+	);
+}

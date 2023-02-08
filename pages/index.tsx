@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Head from 'next/head'
+
 const Index = () => (
   <>
     <div>
@@ -16,16 +17,20 @@ const Index = () => (
       <p className='text-center text-9xl text-green-300' >hush child</p>
       <br></br>
       <br></br>
-        <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600 px-5"
+      <div className='text-center text-xl'>
+        <Link className="underline text-blue-600 hover:text-blue-800 visited:text-green-400 px-5"
  href='/catfax'>
             CLICK HERE FOR CAT FACTS!!!!
         </Link>
+      </div>
       <br></br>
       <br></br>
-        <Link className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600 px-5"
+      <div className='text-center text-xl'>
+        <Link className="underline text-blue-600 hover:text-blue-800 visited:text-green-400 px-5"
  href='/elgatoclicker'>
             CLICK HERE FOR ELGATO CLICKER :O
         </Link>
+      </div>
     </div>
   </>
   )
