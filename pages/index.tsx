@@ -8,6 +8,9 @@ const Index = () => (
         <link rel="shortcut icon" href="../cool-favicon64x64.ico" />
         <title>Wolf's Portfolio</title>
       </Head>
+      <nav className='bg-white border-solid'>
+          <Link href='/elgatoclicker' className='text-green-400 bg-slate-900 border-solid border-teal-600 text-4xl '>Hello</Link>
+      </nav>
       <br></br>
       <h1 className="text-center text-3xl underline text-white">
         Welcome to the epik portfolio made by Wolfgang
