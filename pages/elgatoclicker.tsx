@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { useRouter } from 'next/router'
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function ElgatoClicker() {
 
@@ -57,7 +58,16 @@ export default function ElgatoClicker() {
         <Head>
             <title>Elgato Clicker</title>
         </Head>
-        <div className='text-center bg-orange-500 min-h-screen'>
+
+        <nav>
+        <ul className='list-none m-0 p-0 overflow-hidden bg-slate-800'>
+          <li className='float-left'><Link href='/' className='block text-green-400 px-10 py-5 text-3xl hover:bg-slate-400'>Home</Link></li>
+          <li className='float-left'><Link href='/catfax' className='block text-green-400 px-10 py-5 text-3xl hover:bg-slate-400'>Cat Facts</Link></li>
+          <li className='float-left'><Link href='/elgatoclicker' className='block text-green-400 px-10 py-5 text-3xl hover:bg-slate-400'>Elgato Clicker</Link></li>
+        </ul>
+      </nav>
+
+        <div className='text-center bg-orange-500 min-h-screen pt-10'>
             <h1 className="text-white">
                 Elgato Clicker will be ported here
             </h1>
