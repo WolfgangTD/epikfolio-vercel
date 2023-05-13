@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Head from 'next/head'
 
-export default function Index() {
+export default function Page() {
 
   return(
   <>
@@ -10,16 +10,6 @@ export default function Index() {
         <link rel="shortcut icon" href="../cool-favicon64x64.ico" />
         <title>Wolf's Portfolio</title>
       </Head>
-
-      <nav>
-        <ul className='list-none m-0 p-0 overflow-hidden bg-slate-800'>
-          <li className='float-left'><Link href='/' className='block text-green-400 px-10 py-5 text-3xl hover:bg-slate-400'>Home</Link></li>
-          <li className='float-left'><Link href='/catfax' className='block text-green-400 px-10 py-5 text-3xl hover:bg-slate-400'>Cat Facts</Link></li>
-          <li className='float-left'><Link href='/elgatoclicker' className='block text-green-400 px-10 py-5 text-3xl hover:bg-slate-400'>Elgato Clicker</Link></li>
-          <li className='float-left'><Link href='/blog/blog1' className='block text-green-400 px-10 py-5 text-3xl hover:bg-slate-400'>Blog</Link></li>
-        </ul>
-      </nav>
-
       <br></br>
       <div className='pt-10'>
       <h1 className="text-center text-3xl underline text-white">

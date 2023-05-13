@@ -1,15 +1,8 @@
 import React from 'react'
-import { useRouter } from 'next/router'
 import Head from "next/head"
 import Link from "next/link";
 
 export default function Blog() {
-    let router = useRouter();
-
-    function nextClick() {
-        router.push('/blog/blog2')
-    }
-
     return (
         <>
             <div className='text-center'>
@@ -31,7 +24,7 @@ export default function Blog() {
                         Dev diary 1
                     </h1>
                     <p className="text-white">
-                        13/05/2002
+                        13/05/2023
                     </p>
                     <br></br>
                     <p className="text-white px-10">
@@ -70,7 +63,7 @@ export default function Blog() {
                 </body>
                 <footer>
                     <ul className='list-none m-0 p-0 overflow-hidden bg-slate-800'>
-                        <button className='float-right px-20 py-10 block text-green-400 text-3xl hover:bg-slate-400 bg-slate-800' onClick={nextClick}>Next page</button>
+                        <button className='float-right px-20 py-10 block text-green-400 text-3xl hover:bg-slate-400 bg-slate-800'>Next page</button>
                     </ul>
                 </footer>
             </div>

@@ -1,19 +1,18 @@
 import Image from 'next/image'
 import React from 'react'
-import { useRouter } from 'next/router'
 import Head from 'next/head';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 export default function ElgatoClicker() {
 
-    let router = useRouter();
-
     const [clicks, setClicks] = React.useState(0);
     const [upgrade1, setUpgrade1] = React.useState(0);
     const [upgrade2, setUpgrade2] = React.useState(0);
     const [upgrade3, setUpgrade3] = React.useState(0);
     
+
+
     function handleClick(){
         setClicks(clicks + 1 + upgrade1 + (upgrade2*10) + (upgrade3*100));
 
@@ -50,7 +49,7 @@ export default function ElgatoClicker() {
 
     function WinGame(){
         if(clicks >= 1000000){
-            router.push('/elgatowin')
+           return true;
         }
     }
 
@@ -65,7 +64,7 @@ export default function ElgatoClicker() {
           <li className='float-left'><Link href='/' className='block text-green-400 px-10 py-5 text-3xl hover:bg-slate-400'>Home</Link></li>
           <li className='float-left'><Link href='/catfax' className='block text-green-400 px-10 py-5 text-3xl hover:bg-slate-400'>Cat Facts</Link></li>
           <li className='float-left'><Link href='/elgatoclicker' className='block text-green-400 px-10 py-5 text-3xl hover:bg-slate-400'>Elgato Clicker</Link></li>
-          <li className='float-left'><Link href='/blog/blog1' className='block text-green-400 px-10 py-5 text-3xl hover:bg-slate-400'>Blog</Link></li>
+          <li className='float-left'><Link href='/blog' className='block text-green-400 px-10 py-5 text-3xl hover:bg-slate-400'>Blog</Link></li>
         </ul>
       </nav>
 
@@ -79,6 +78,7 @@ export default function ElgatoClicker() {
             <p className="text-white">this is a website to make epik el gato game</p>
             <br></br>
             <div className='justify-center flex'>
+            <motion.div whileTap={{ scale: 1.2 }}>
             <Image 
                 width='250'
                 height='250'
@@ -88,8 +88,9 @@ export default function ElgatoClicker() {
                 id="elgato"  
                 draggable = 'false'
             />
+            </motion.div>
             </div>
-
+            <br></br>
             <p className="text-white">Dabloons: {clicks} </p>
 
             <p className="text-white">Upgrade 1: {upgrade1} </p>
