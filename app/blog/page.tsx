@@ -28,9 +28,10 @@ export default function Blog() {
                         I am going to be starting off with something simple by creating a simple snake game from scratch
                         using SDL2. Due to attempting to make this for the first time I went over to ask chatGPT for a simple
                         to-do list for creating a game. This was the list provided:
+                    </p>
                         <br></br>
                         <br></br>
-                        <ul className='list-inside list-decimal text-left px-10'>
+                        <ul className='list-inside list-decimal text-left px-10 text-white'>
                         <li className='py-3'>Set up the development environment by installing SDL2 and a C++ compiler.</li>
                         <li className='py-3'>Create a new C++ project and include the SDL2 header files.</li>
                         <li className='py-3'>Create a window using the SDL_CreateWindow function.</li>
@@ -48,11 +49,10 @@ export default function Blog() {
                         <li className='py-3'>Use SDL_Delay to limit the game's frame rate to a reasonable value.</li>
                         <li className='py-3'>Add sound effects and music using SDL_mixer if desired.</li>
                     </ul>
-                    </p>
                     <br></br>
                 <footer>
                     <ul className='list-none m-0 p-0 overflow-hidden bg-slate-800'>
-                        <button className='float-right px-20 py-10 block text-green-400 text-3xl hover:bg-slate-400 bg-slate-800'>Next page</button>
+                        <button className='float-right px-20 py-10 block text-green-400 text-3xl hover:bg-slate-400 bg-slate-800'><Link href='/blog/blog2'>Next page</Link></button>
                     </ul>
                 </footer>
             </div>
