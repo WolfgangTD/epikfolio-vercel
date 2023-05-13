@@ -3,6 +3,7 @@ import React from 'react'
 import { useRouter } from 'next/router'
 import Head from 'next/head';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 export default function ElgatoClicker() {
 
@@ -85,6 +86,7 @@ export default function ElgatoClicker() {
                 onClick={handleClick}
                 alt="el gato"
                 id="elgato"  
+                draggable = 'false'
             />
             </div>
 
