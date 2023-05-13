@@ -1,16 +1,16 @@
 import Link from 'next/link'
 import Head from 'next/head'
 
-export default function Page() {
+
+export default function Home() {
 
   return(
   <>
     <div>
       <Head>
-        
+        <link rel="shortcut icon" href="../cool-favicon64x64.ico" />
         <title>Wolf's Portfolio</title>
       </Head>
-      <br></br>
       <div className='pt-10'>
       <h1 className="text-center text-3xl underline text-white">
         Welcome to the epik portfolio made by Wolfgang

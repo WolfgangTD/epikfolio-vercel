@@ -9,12 +9,10 @@ export default function CatFax() {
 		<Head>
         <title>Cat Facts</title>
       	</Head>
-			<main>
 			<p className="text-white">
 				Cat Fact:
 				
 			</p>
-			</main>
 		</div>
     </>
 	);
