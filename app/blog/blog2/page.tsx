@@ -59,6 +59,7 @@ export default function Blog() {
                     <br></br>
                     <br></br>
                     </div>
+
                     <pre className='px-10'><code className='text-white'>
                     #include &lt;SDL2/SDL.h&gt;<br />
                     #include &lt;iostream&gt;<br />
@@ -201,6 +202,7 @@ export default function Blog() {
                     &#125;<br />
                     </code></pre>
                     <br></br>
+
                     <br></br>
                     <div className='text-center'>
                     <p className='text-white px-10'>
@@ -223,7 +225,7 @@ export default function Blog() {
                 <footer>
                     <ul className='list-none m-0 p-0 overflow-hidden bg-slate-800'>
                     <button className='float-left px-20 py-10 block text-green-400 text-3xl hover:bg-slate-400 bg-slate-800'><Link href='/blog'>Previous page</Link></button>
-                        <button className='float-right px-20 py-10 block text-green-400 text-3xl hover:bg-slate-400 bg-slate-800'><Link href='/blog/blog2'>Next page</Link></button>
+                        <button className='float-right px-20 py-10 block text-green-400 text-3xl hover:bg-slate-400 bg-slate-800'><Link href='/blog/blog3'>Next page</Link></button>
                     </ul>
                 </footer>
         </>
