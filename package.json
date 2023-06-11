@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@headlessui/react": "^1.7.15",
     "framer-motion": "^10.12.10",
     "next": "^13.1.6",
     "prismjs": "^1.29.0",

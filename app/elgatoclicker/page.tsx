@@ -3,14 +3,14 @@ import React from 'react'
 import Head from 'next/head';
 
 export default function ElgatoClicker() {
-
     return (
         <>
+        <html className='bg-orange-500'>
         <Head>
             <title>Elgato Clicker</title>
         </Head>
 
-        <div className='text-center bg-orange-500 min-h-screen pt-10'>
+        <div className='text-center min-h-screen pt-10'>
             <h1 className="text-white">
                 Elgato Clicker will be ported here
             </h1>
@@ -50,6 +50,7 @@ export default function ElgatoClicker() {
             <br></br>
             <button className="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3" > reset </button>
         </div>
+        </html>
         </>
     )
 }

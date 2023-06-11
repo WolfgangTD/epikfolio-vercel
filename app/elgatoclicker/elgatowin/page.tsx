@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 const ElgatoWin = () =>(
         <>
+        <html className='bg-zinc-800'>
         <Head>
             <title>Elgato WIN!</title>
         </Head>
@@ -19,6 +20,7 @@ const ElgatoWin = () =>(
                     alt="el gato break dancing"
                 />
             </div>
+        </html>
         </>
     )
 export default ElgatoWin

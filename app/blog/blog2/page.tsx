@@ -5,6 +5,7 @@ import Link from "next/link"
 export default function Blog() {
     return (
         <>
+        <html className='bg-zinc-800'>
         <div className='text-center'>
                 <Head>
                     <title>Blog</title>
@@ -228,6 +229,7 @@ export default function Blog() {
                         <button className='float-right px-20 py-10 block text-green-400 text-3xl hover:bg-slate-400 bg-slate-800'><Link href='/blog/blog3'>Next page</Link></button>
                     </ul>
                 </footer>
+                </html>
         </>
     )
 }

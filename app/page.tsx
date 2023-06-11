@@ -6,6 +6,7 @@ export default function Home() {
 
   return(
   <>
+  <html className='bg-zinc-800'>
     <div>
       <Head>
         <link rel="shortcut icon" href="../cool-favicon64x64.ico" />
@@ -37,6 +38,7 @@ export default function Home() {
           </ul>
       </div>
     </div>
+    </html>
   </>
   )
 }

@@ -5,6 +5,7 @@ import Link from "next/link";
 export default function Blog() {
     return (
         <>
+        <html className='bg-zinc-800'>
             <div className='text-center'>
                 <Head>
                     <title>Blog</title>
@@ -56,6 +57,7 @@ export default function Blog() {
                     </ul>
                 </footer>
             </div>
+            </html>
         </>
     )
 }
