@@ -16,7 +16,7 @@ export default function BlogLayout({
   }: {
     children: React.ReactNode
   }) {
-    return <section className='bg-gradient-to-b from-cyan-900 to-green-700'><nav>
+    return <section className='bg-gradient-to-b from-cyan-900 to-green-700' ><nav>
     <Menu>
         <Menu.Button className="list-none m-0 p-0 overflow-hidden block text-green-400 px-10 py-5 text-3xl hover:bg-slate-400">Menu</Menu.Button>
         <Transition
