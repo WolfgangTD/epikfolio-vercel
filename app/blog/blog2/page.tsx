@@ -224,9 +224,9 @@ export default function Blog() {
                     <br></br>
                     <br></br>
                 <footer>
-                    <ul className='list-none m-0 p-0 overflow-hidden bg-green-700'>
-                    <Link href='/blog'><button className='float-left px-20 py-10 block text-white text-3xl hover:bg-slate-400 bg-green-700'>Previous page</button></Link>
-                    <Link href='/blog/blog3'><button className='float-right px-20 py-10 block text-white text-3xl hover:bg-slate-400 bg-green-700'>Next page</button></Link>
+                    <ul className='list-none m-0 p-0 overflow-hidden to-green-700'>
+                    <Link href='/blog'><button className='float-left px-20 py-10 block text-white text-3xl hover:bg-slate-400 to-green-700'>Previous page</button></Link>
+                    <Link href='/blog/blog3'><button className='float-right px-20 py-10 block text-white text-3xl hover:bg-slate-400 to-green-700'>Next page</button></Link>
                     </ul>
                 </footer>
           
