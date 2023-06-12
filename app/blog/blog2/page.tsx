@@ -5,7 +5,7 @@ import Link from "next/link"
 export default function Blog() {
     return (
         <>
-        <html className='bg-zinc-800'>
+   
         <div className='text-center'>
                 <Head>
                     <title>Blog</title>
@@ -224,12 +224,12 @@ export default function Blog() {
                     <br></br>
                     <br></br>
                 <footer>
-                    <ul className='list-none m-0 p-0 overflow-hidden bg-slate-800'>
-                    <button className='float-left px-20 py-10 block text-green-400 text-3xl hover:bg-slate-400 bg-slate-800'><Link href='/blog'>Previous page</Link></button>
-                        <button className='float-right px-20 py-10 block text-green-400 text-3xl hover:bg-slate-400 bg-slate-800'><Link href='/blog/blog3'>Next page</Link></button>
+                    <ul className='list-none m-0 p-0 overflow-hidden bg-green-700'>
+                    <Link href='/blog'><button className='float-left px-20 py-10 block text-white text-3xl hover:bg-slate-400 bg-green-700'>Previous page</button></Link>
+                    <Link href='/blog/blog3'><button className='float-right px-20 py-10 block text-white text-3xl hover:bg-slate-400 bg-green-700'>Next page</button></Link>
                     </ul>
                 </footer>
-                </html>
+          
         </>
     )
 }

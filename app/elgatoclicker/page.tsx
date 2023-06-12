@@ -5,7 +5,6 @@ import Head from 'next/head';
 export default function ElgatoClicker() {
     return (
         <>
-        <html className='bg-orange-500'>
         <Head>
             <title>Elgato Clicker</title>
         </Head>
@@ -50,7 +49,7 @@ export default function ElgatoClicker() {
             <br></br>
             <button className="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3" > reset </button>
         </div>
-        </html>
+
         </>
     )
 }

@@ -4,9 +4,8 @@ import Link from "next/link"
 export default function CatFax() {
 	return (
     <>
-	<html className='bg-zinc-800'>
-		<div className='text-center'>
 
+		<div className='text-center'>
 		<Head>
         <title>Cat Facts</title>
       	</Head>
@@ -15,7 +14,6 @@ export default function CatFax() {
 				
 			</p>
 		</div>
-		</html>
     </>
 	);
 }
