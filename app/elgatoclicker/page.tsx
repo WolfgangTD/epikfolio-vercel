@@ -8,7 +8,6 @@ export default function ElgatoClicker() {
         <Head>
             <title>Elgato Clicker</title>
         </Head>
-
         <div className='text-center min-h-screen pt-10'>
             <h1 className="text-white">
                 Elgato Clicker will be ported here
